@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-{% block title %}{{ file.title }}{% endblock %}
+{% block title %} {{ site.config.title }} - 相册 - {{ file.title }}{% endblock %}
 
 {% set next_one = get_connected_one('>') %}
 {% set pre_one = get_connected_one('<') %}
