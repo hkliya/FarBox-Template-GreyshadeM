@@ -8,7 +8,7 @@
 	    {% set categories = get_folders(level=[1,2], min_posts_count=1) %}
 	    {% for category in  sorted_by_position(categories)%}
 	        <li>
-	            <a href="/category/{{ category.path }}" style="background:url(/{{ category.path }}cover.png)">
+	            <a href="/category/{{ category.path }}" style="background:url(/{{ category.path }}cover.png?blur=true)">
 								<div class="category-text">
 	                <div class="category">{{ category.title }}</div>
 	                <span> {{ category.posts_count }} 篇文章</span>
