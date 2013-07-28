@@ -86,3 +86,64 @@ Alpha(Opacity=30); border: none;
  #image .connected_images .next span{ right:5px; }
 
  /* connected images ends*/
+
+ /* for categories*/
+
+
+
+ #categories{
+     list-style-type: none;
+     display:inline-block;
+     zoom:1;
+     *display:inline;
+     clear: both;
+     padding: 0;
+     margin-top: 50px;
+ }
+
+ #categories li{
+     float: left;
+     position: relative;
+ }
+ 
+ #categories li .category-text {
+	 background-color: rgba(0, 0, 0, 0.7);
+	 margin-top: 230px;
+	 padding: 5px;
+ }
+ 
+  #categories li .category {
+  	color: #ffffff;
+  }
+ 
+ #categories li a {
+     margin: 20px;
+     width: 235px;
+     float: left;
+     height: 320px;
+     background: #fff;
+     border: 1px solid #c8c8c8;
+ }
+
+
+ #categories li a:hover{
+     border: 1px solid #b7b7b7;
+     -webkit-box-shadow: 0 1px 5px rgba(0,0,0,0.2);
+     -moz-box-shadow: 0 1px 5px rgba(0,0,0,0.2);
+     box-shadow: 0 1px 5px rgba(0,0,0,0.2);
+ }
+
+ #categories li a:hover .category-text {
+     padding-left: 8px;
+ }
+
+ #categories li .category {
+     font-size: 1.8em;
+     word-wrap:break-word;
+     overflow:hidden;
+ }
+
+ #categories li span{
+     color: #999;
+     font-size: 1.2em;
+ }
