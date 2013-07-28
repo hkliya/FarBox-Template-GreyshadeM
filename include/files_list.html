@@ -21,13 +21,15 @@
 				function images_auto_margin(){
 					var images_e = document.getElementById('image_list');
 					images_e.style.marginLeft = 0;
-					var width = document.width || document.body.clientWidth;
+					var width = document.getElementById("images_container").offsetWidth;//document.width || document.body.clientWidth;
 					if (images_e && width > 330){
-						images_e.style.marginLeft = ( width% 336) /2 + 'px';
+						images_e.style.marginLeft = ( width % 336) /2 + 'px';
 					}
 				}
 				images_auto_margin();
-				window.onresize = images_auto_margin;
+				setTimeout(function() {
+					window.onresize = images_auto_margin;
+				}, 2000);
 			</script>
 		</div>
     </div>
