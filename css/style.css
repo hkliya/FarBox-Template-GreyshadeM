@@ -148,3 +148,36 @@ Alpha(Opacity=30); border: none;
      color: #999;
      font-size: 1.2em;
  }
+
+ .toc{
+	 background: #fafafa;
+	 border-radius: 5px;
+	 border: 1px solid #f0f0eb;
+	 margin: 27px 0 47px 0;
+	 padding: 0;
+ }
+
+ .toc ul{
+	 padding: 5px 42px;
+ }
+
+ .toc ul li{
+	 padding: 0;
+	 margin: 0;
+	 line-height: 2.1em;
+
+ }
+
+ .post hr {
+	margin: 10px 0;
+	border-top: 1px dashed #ccc;
+ }
+
+ /* 文章中图片边框 */
+ .entry-content img {
+	 padding: 5px;
+	 background: #fff;
+	 -moz-box-shadow: 0 0 3px rgba(0,0,0,0.2);
+	 -webkit-box-shadow: 0 0 3px rgba(0,0,0,0.2);
+	 box-shadow: 0 0 3px rgba(0,0,0,0.2);
+ }
