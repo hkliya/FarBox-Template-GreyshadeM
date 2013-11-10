@@ -35,8 +35,8 @@
 				<div class="intrude-less">
 					<header id="header" class="inner">
 					<div class="profilepic">  
-						{% if site.configs.profilepic and has(site.configs.profilepic) %}
-						<img src='{{ site.configs.profilepic }}' alt='Profile Picture' style='width: 160px;' />
+						{% if has("avatar.png") %}
+						<img src='/avatar.png' alt='Profile Picture' style='width: 160px;' />
 						{% elif site.configs.gravatar %}
 						<script src="/template/js/md5.js"></script>
 						<script type="text/javascript">
