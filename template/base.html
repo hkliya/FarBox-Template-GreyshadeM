@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <title>{% block title %}{{ site.configs.title }} {% endblock %}</title>
+    <title>{% block title %}{{ site.configs.title }} -  {% endblock %}</title>
 
 
     <!-- http://t.co/dKP3o1e -->
@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel='alternate' type='application/rss+xml' title='atom 1.0' href='/feed' />
-    
+
     <link href="/favicon.png" rel="shortcut icon">
     <link href="/template/css/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
     <link href="/template/css/style.css" rel="stylesheet" type="text/css">
@@ -59,12 +59,12 @@
                         {% if has('images') and has('posts')%}
                         <li><a href="/folder/">相册</a></li>
                         {% endif %}
-                        
+
 						{% if has('isaid.md') %}
 						{% set isaid_post = get_post('isaid.md') %}
 						<li><a href="/isaid.md">{{ isaid_post.title }}</a></li>
 						{% endif %}
-						
+
                         {% if has('links.md') %}
                         <li><a href="/links.md">链接</a></li>
                         {% endif %}
