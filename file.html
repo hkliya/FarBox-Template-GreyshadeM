@@ -1,8 +1,8 @@
 {% extends 'base.html' %}
 {% block title %} {{ site.configs.title }} - 相册 - {{ file.title }}{% endblock %}
 
-{% set next_one = get_connected_one('>') %}
-{% set pre_one = get_connected_one('<') %}
+{% set next_one = get_connected_one(file, True, '>') %}
+{% set pre_one = get_connected_one(file, True, '<') %}
 
 {% block content %}
 <div class="mid-col">
