@@ -14,14 +14,14 @@
               a(href= post.metadata.link, target='_blank')
                 post.title
             .entry-content
-              {{ post.content | limit(200) }}
+              {{ post.content }}
               .read_more
                 a(href=post.metadata.link, target='_blank') 打开链接
           else
             h1.title
               a(href='{{ post.url }}') {{ post.title }}
             .entry-content
-              {{ post.content | limit(200) }}
+              {{ post.content | limit(300) }}
               .read_more
                 a(href=post.url) 阅读全文
           br
