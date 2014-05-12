@@ -4,6 +4,12 @@
 {% set next_one = get_connected_one('>') %}
 {% set pre_one = get_connected_one('<') %}
 
+{% block header %}
+<link rel="stylesheet" href="http://yandex.st/highlightjs/8.0/styles/default.min.css">
+<script src="http://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+{% endblock %}
+
 {% block content %}
 <div class="mid-col">
     <div class="mid-col-container">
