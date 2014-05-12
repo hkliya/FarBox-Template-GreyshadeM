@@ -8,7 +8,7 @@
               time= post.date | date('%Y-%m-%d')
             if post.tags
               for tag in post.tags
-                a.category(href='/tags/{{ tag }}') {{ tag }}
+                a.category(href='/tags/{{ tag }}') {{ tag }}&nbsp;
           if post.metadata.link
             h1.title
               a(href= post.metadata.link, target='_blank')
